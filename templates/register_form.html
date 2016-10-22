@@ -6,6 +6,28 @@
 <form action="/register" method="POST">
 
     <div class="form-group">
+        <input type="radio" name="role" value="teacher" checked> Teacher &nbsp;
+        <input type="radio" name="role" value="student"> Student<br>
+        
+    </div>
+    <div class="form-group">
+        <label>
+            Name
+            <input type="name" name="name" class="form-control">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            Age
+            <input type="age" name="age" class="form-control">
+        </label>
+    </div>
+    <div class="form-group">
+        <input type="radio" name="gender" value="male" checked> Male &nbsp;
+        <input type="radio" name="gender" value="female"> Female &nbsp;
+        <input type="radio" name="gender" value="other"> Other
+    </div>
+    <div class="form-group">
         <label>
             Email
             <input type="email" name="email" class="form-control">
@@ -18,13 +40,33 @@
             <input type="password" name="password" class="form-control">
         </label>
     </div>
+    <div class="form-group">
+        <label>
+            address
+            <input type="address" name="address" class="form-control">
+        </label>
+    </div>
 
+    <div class="form-group">
+        <label>
+            City
+            <input type="city" name="city" class="form-control">
+        </label>
+    </div>
+    <div class="form-group">
+        <label>
+            State
+            <input type="state" name="state" class="form-control">
+        </label>
+    </div>
+    
     <div class="form-group">
         <label>
             Zipcode
             <input type="text" name="zipcode" class="form-control">
         </label>
     </div>
+
 
     <div class="form-group">
         <input type="submit" value="Register" class="btn btn-success">
@@ -33,3 +75,4 @@
 </form>
 </div>
 {% endblock %}
+
